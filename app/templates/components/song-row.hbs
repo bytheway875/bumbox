@@ -1,0 +1,12 @@
+
+<td class="song-track">
+    <span class="track-number">{{song.track}}</span>
+    <span class="play">
+        {{audio-control isPlaying=isPlaying play='play' pause='pause'}}
+
+
+    </span>
+</td>
+<td class="song-name">{{song.name}}</td>
+<td class="song-duration">{{format-duration song.duration}}</td>
+

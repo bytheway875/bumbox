@@ -1,0 +1,10 @@
+<button {{action "open"}}Open Dialog></button>
+
+{{#if isOpen}}
+  <div class="overlay">
+      <div class="modal-box">
+          {{yield}}
+          {{dialog-buttons confirm='save' cancel='dismiss'}}
+      </div>
+  </div>
+{{/if}}
